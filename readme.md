@@ -25,7 +25,7 @@ import remarkParse from 'remark-parse'
 import rehypeEmbed from '@hongvanpc10/rehype-embed'
 import stringify from 'rehype-stringify'
 
-const string = `{@embed:https://www.youtube.com/watch?v=xsI0j3pO7vc}`
+const string = `@embed:https://www.youtube.com/watch?v=xsI0j3pO7vc`
 
 const htmlStr = unified()
   .use(remarkParse)
@@ -53,7 +53,7 @@ Output:
 ## Custom Style
 
 ```js
-const string = `{@embed:https://www.youtube.com/watch?v=xsI0j3pO7vc}`
+const string = `@embed:https://www.youtube.com/watch?v=xsI0j3pO7vc`
 const htmlStr = unified()
   .use(remarkParse)
   .use(remark2rehype)

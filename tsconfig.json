@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"target": "es2016",
+		"target": "es2022",
 		"module": "es6",
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
@@ -8,7 +8,6 @@
 		"skipLibCheck": true,
 		"outDir": "dist",
 		"declaration": true,
-		"declarationMap": true,
 		"moduleResolution": "node"
 	},
 	"include": ["src/**/*.ts"]
