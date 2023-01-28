@@ -15,7 +15,7 @@ const defaultOptions: Options = {
 	style: 'width: 100%; aspect-ratio: 16 / 9; border-radius: 0.75rem',
 }
 
-const rehypeEmbed: Plugin<[Options?], Root> = options => tree =>
+const rehypeEmbed: Plugin<[Options?], Root> = (options = {}) => tree =>
 	visit(tree, 'element', node => {
 		if (node.tagName === 'p') {
 			const youtubeUrlRegex =
